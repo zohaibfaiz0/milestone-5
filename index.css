@@ -1,0 +1,165 @@
+/* General styling for the body and page */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f6f9; /* Match CSS1 background */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Match CSS1 color */
+    font-size: 36px; /* Match CSS1 font size */
+    margin-bottom: 40px; /* Match CSS1 margin */
+}
+
+/* Form styling */
+form {
+    margin: 0 auto;
+    max-width: 700px; /* Match CSS1 width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(31, 15, 15, 0.1); /* Match CSS1 box-shadow */
+}
+
+fieldset {
+    border: none; /* Remove border to match CSS1 */
+    padding: 20px;
+    margin-bottom: 20px; /* Match CSS1 margin */
+    background-color: #fafafa; /* Match CSS1 background */
+}
+
+legend {
+    text-align: left;
+    font-size: 18px; /* Match CSS1 font size */
+    font-weight: bold;
+    color: #2c3e50; /* Match CSS1 color */
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-size: 14px;
+}
+
+/* Input fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #34495e;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    background-color: #f9f9f9;
+}
+
+textarea {
+    background-color: #f9f9f9;
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    display: inline-block;
+    width: 100%; /* Match CSS1 width */
+    height: 50px;
+    background-color: #2c3e50;
+    border: 2px solid #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #34495e; /* Darker background on hover to match CSS1 */
+}
+
+/* Resume output styling */
+#resumeOutput {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 2px solid #34495e;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(31, 15, 15, 0.1); /* Match CSS1 box-shadow */
+}
+
+#resumeOutput h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px; /* Match CSS1 font size */
+    margin-bottom: 20px; /* Match CSS1 margin */
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.resume-section p {
+    font-size: 16px;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Contact Info layout */
+#resumeOutput .contact-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #34495e;
+}
+
+#resumeOutput .contact-info div {
+    width: 48%;
+}
+
+#resumeOutput .contact-info .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#resumeOutput .contact-info .email, 
+#resumeOutput .contact-info .phone {
+    font-style: bold;
+}
+
+@media (max-width: 768px) {
+    #resumeOutput .contact-info {
+        flex-direction: column;
+    }
+
+    #resumeOutput .contact-info div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #resumeOutput .resume-section h3 {
+        font-size: 20px;
+    }
+
+    #resumeOutput .resume-section p {
+        font-size: 14px;
+    }
+}
